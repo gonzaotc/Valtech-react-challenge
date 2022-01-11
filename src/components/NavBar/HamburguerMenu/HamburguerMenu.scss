@@ -1,0 +1,42 @@
+.hMenu__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 1, 50, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.hMenu {
+  height: 100%;
+  width: 60%;
+  z-index: 2;
+  background-color: white;
+  padding: 2rem;
+  padding-right: 0;
+  &__close {
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  &__links {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    .NavLink {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.8rem 0;
+    }
+    .active {
+      border-right: 4px solid orange;
+    }
+  }
+}
+
+.show {
+  display: flex !important;
+}
